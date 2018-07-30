@@ -22,17 +22,18 @@ spl_autoload_register(function ($class) {
 });
 
 session_start();
-
+require_once 'vendor/autoload.php';
 
 
 $config = require 'application/config/app.php';
 
 $router = new Router($config['main']);
-$db = new Db();
+//$db = new Db();
 
 
 //
-require_once 'vendor/autoload.php';
+
+
 
 //$loader = new Twig_Loader_Array(array(
 //    'index' => 'Hello {{ name }}!',

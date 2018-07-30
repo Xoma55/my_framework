@@ -25,7 +25,7 @@ class Router {
             $action = isset($route[1])?$route[1].'Action':'indexAction';
 
             if(method_exists($path,$action)) {
-                $controller = new $path($route);
+                $controller = new $path($route,$config);
                 $controller->$action();
             } else {
                 echo 'No';

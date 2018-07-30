@@ -9,13 +9,17 @@
 
 namespace application\engine;
 
+use application\engine\View;
+
 abstract class Controller {
 
     public $route;
+    public $view;
 
-    public function __construct($route) {
+    public function __construct($route,$config) {
 
         $this->route=$route;
+        $this->view = new View($route,$config);
 
     }
 

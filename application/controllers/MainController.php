@@ -14,7 +14,12 @@ class MainController extends Controller {
 
     public function indexAction() {
 
-        echo 'Main';
+
+
+        $this->view->render([
+            'title'=>'Main Page',
+
+        ]);
     }
 
 }

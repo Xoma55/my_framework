@@ -14,12 +14,16 @@ class AccountController extends Controller{
 
     public function loginAction() {
 
-        echo 'Login';
+        $this->view->render([
+            'title'=>'Страница входа'
+        ]);
     }
 
     public function registerAction() {
 
-        echo 'Register';
+        $this->view->render([
+            'title'=>'Страница регистрации'
+        ]);
     }
 
 }

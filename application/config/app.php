@@ -10,6 +10,7 @@ return [
 
     'main' => [
         //'baseRoute'=>'site/index',
+        'twigCache' => 'cache'
     ]
 
 ];
